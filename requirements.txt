@@ -19,3 +19,4 @@ typing_extensions==4.12.2
 tzdata==2024.2
 Werkzeug==3.1.1
 pymssql
+pyodbc==4.0.32
