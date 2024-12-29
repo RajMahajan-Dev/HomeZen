@@ -22,9 +22,6 @@ routes = Blueprint('routes', __name__)
 def Home():
     return render_template('home.html')
 
-@auth.route('/favicon.ico') 
-def favicon(): 
-    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 @auth.route('/login', methods=['POST', 'GET'])
 def login():
