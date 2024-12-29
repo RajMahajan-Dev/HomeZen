@@ -11,7 +11,7 @@ LoginManager = LoginManager()
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'secretkey'
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'postgres://postgres.ogdtmcedzmsqobivhicz:aKjyr0zwOyMl6pmh@aws-0-us-east-1.pooler.supabase.com:6543/postgres?sslmode=require&supa=base-pooler.x')
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'postgresql://postgres:mahajan2151R@@db.ogdtmcedzmsqobivhicz.supabase.co:5432/postgres')
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=300)
     app.config['SESSION_COOKIE_SECURE'] = True
