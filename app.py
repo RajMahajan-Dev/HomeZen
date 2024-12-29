@@ -11,8 +11,8 @@ def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'secretkey'
     app.config['SQLALCHEMY_DATABASE_URI'] = (
-        "mssql+pyodbc://rajking:mahajan2151R@@homezen.database.windows.net:1433/DataHomeZen?driver=ODBC+Driver+17+for+SQL+Server"
-    )
+    'mssql+pymssql://rajking:mahajan2151R@homezen.database.windows.net:1433/DataHomeZen'
+)
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=300)
     app.config['SESSION_COOKIE_SECURE'] = True
